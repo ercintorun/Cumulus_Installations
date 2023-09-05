@@ -1,9 +1,9 @@
 https://docs.nvidia.com/networking-ethernet-software/cumulus-linux-41/Installation-Management/Zero-Touch-Provisioning-ZTP/
+
 ## Sample1
 dhcpd.conf file 
 
-# /etc/dhcp/dhcpd.conf
-
+    # /etc/dhcp/dhcpd.conf
     ddns-update-style none;
     authoritative;
     log-facility local7;
