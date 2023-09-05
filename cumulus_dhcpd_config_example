@@ -1,0 +1,11 @@
+https://docs.nvidia.com/networking-ethernet-software/cumulus-linux-41/Installation-Management/Zero-Touch-Provisioning-ZTP/
+
+    option cumulus-provision-url code 239 = text;
+   
+    subnet 192.168.0.0 netmask 255.255.255.0 {
+      range 192.168.0.100 192.168.0.200;
+      option cumulus-provision-url "http://192.0.2.1/demo.sh";
+      host dc1-tor-sw1 { hardware ethernet 44:38:39:00:1a:6b; fixed-address 192.168.0.101; option host-name "dc1-tor-sw1"; }
+    }
+
+Do not use an underscore (_) in the hostname; underscores are not permitted in hostnames.
