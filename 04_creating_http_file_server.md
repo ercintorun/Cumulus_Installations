@@ -25,7 +25,7 @@ Create an virtualhost to serve as fileserver on default http port:
 
 Let’s enable the file with the a2ensite tool:
 
-    sudo a2ensite your_domain.conf
+    sudo a2ensite fileserver.conf
     sudo apache2ctl configtest
     sudo systemctl restart apache2
 
