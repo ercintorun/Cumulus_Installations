@@ -29,9 +29,11 @@ Let’s enable the file with the a2ensite tool:
     sudo apache2ctl configtest
 
 Disable the default site defined in 000-default.conf:
+
     sudo a2dissite 000-default.conf
 
 Restart apache2
+
     sudo systemctl restart apache2
 
 Upload cumulus image and ztp script inside folder /var/www/fileserver. Do not forget to change permissions again: 
