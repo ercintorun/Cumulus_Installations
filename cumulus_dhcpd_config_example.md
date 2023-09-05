@@ -1,5 +1,11 @@
 https://docs.nvidia.com/networking-ethernet-software/cumulus-linux-41/Installation-Management/Zero-Touch-Provisioning-ZTP/
 
+"option default-url" is for installing OS image during onie-discovery process. In there is no OS, onie-install will open and get DHCP ip address and download the image from here, hence OS will be installed. 
+
+After OS installation, for initial configuration device needs a ZTP process file which can configure initial passwords etc, which is sent by option 239. 
+
+Do not use an underscore (_) in the hostname; underscores are not permitted in hostnames.
+
 ## Sample1
 dhcpd.conf file 
 
@@ -92,4 +98,4 @@ Sample 2
       host dc1-tor-sw1 { hardware ethernet 44:38:39:00:1a:6b; fixed-address 192.168.0.101; option host-name "dc1-tor-sw1"; }
     }
 
-Do not use an underscore (_) in the hostname; underscores are not permitted in hostnames.
+
