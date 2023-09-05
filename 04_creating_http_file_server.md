@@ -36,6 +36,8 @@ Restart apache2
 
     sudo systemctl restart apache2
 
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
+
 Upload cumulus image and ztp script inside folder /var/www/fileserver. Do not forget to change permissions again: 
 
     sudo chmod -R 755 /var/www/fileserver
