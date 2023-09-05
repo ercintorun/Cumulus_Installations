@@ -36,4 +36,4 @@ Restart apache2
 
 Upload cumulus image and ztp script inside folder /var/www/fileserver. Do not forget to change permissions again: 
 
-    sudo chmod -R 755 /var/www/fileserve
+    sudo chmod -R 755 /var/www/fileserver
