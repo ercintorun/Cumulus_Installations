@@ -13,3 +13,5 @@ Update apt cache
 Install application sample 
 
     ansible all -m apt -a name=vim-nox --become --ask-become-pass
+    ansible all -m apt -a "name=snapd state=latest" --become --ask-become-pass
+    ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
