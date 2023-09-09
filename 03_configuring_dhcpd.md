@@ -78,14 +78,14 @@ dhcpd.hosts file:
       option www-server 192.168.200.1;
       option default-url = "http://192.168.200.1/onie-installer";
 
-    host Spine01 {hardware ethernet 48:b0:2d:b0:f3:ae; fixed-address 192.168.200.2; option host-name "Spine01"; }
-    host Spine02 {hardware ethernet 48:b0:2d:51:be:8b; fixed-address 192.168.200.3; option host-name "Spine02"; }
-    host Leaf01 {hardware ethernet 48:b0:2d:94:92:a3; fixed-address 192.168.200.4; option host-name "Leaf01"; }
-    host Leaf02 {hardware ethernet 48:b0:2d:c6:6d:a3; fixed-address 192.168.200.5; option host-name "Leaf02"; }
-    host Leaf03 {hardware ethernet 48:b0:2d:54:0a:5a; fixed-address 192.168.200.6; option host-name "Leaf03"; }
-    host Leaf04 {hardware ethernet 48:b0:2d:3e:ea:31; fixed-address 192.168.200.7; option host-name "Leaf04"; }
-    host Leaf05 {hardware ethernet 48:b0:2d:10:02:25; fixed-address 192.168.200.8; option host-name "Leaf05"; }
-    host Leaf06 {hardware ethernet 48:b0:2d:c0:ed:3c; fixed-address 192.168.200.9; option host-name "Leaf06"; }
+    host Spine01 {hardware ethernet 48:b0:2d:b0:f3:ae; fixed-address 192.168.200.2; option host-name "Spine-001"; }
+    host Spine02 {hardware ethernet 48:b0:2d:51:be:8b; fixed-address 192.168.200.3; option host-name "Spine-002"; }
+    host Leaf01 {hardware ethernet 48:b0:2d:94:92:a3; fixed-address 192.168.200.4; option host-name "Leaf-001"; }
+    host Leaf02 {hardware ethernet 48:b0:2d:c6:6d:a3; fixed-address 192.168.200.5; option host-name "Leaf-002"; }
+    host Leaf03 {hardware ethernet 48:b0:2d:54:0a:5a; fixed-address 192.168.200.6; option host-name "Leaf-003"; }
+    host Leaf04 {hardware ethernet 48:b0:2d:3e:ea:31; fixed-address 192.168.200.7; option host-name "Leaf-004"; }
+    host Leaf05 {hardware ethernet 48:b0:2d:10:02:25; fixed-address 192.168.200.8; option host-name "Leaf-005"; }
+    host Leaf06 {hardware ethernet 48:b0:2d:c0:ed:3c; fixed-address 192.168.200.9; option host-name "Leaf-006"; }
     }#End of static host group
 
 Sample 2
