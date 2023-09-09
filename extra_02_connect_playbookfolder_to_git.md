@@ -19,4 +19,7 @@ After doing your updates:
     git diff
     git add Readme.md 
     git commit -m "your comment if you would like to add"
-    git push origin master
+    git push origin main
+    git push -f origin main  
+
+Update with -f parameter might be needed if you need to write over the changes on github which has not pulled before. 
