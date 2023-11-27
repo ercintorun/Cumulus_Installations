@@ -1,14 +1,14 @@
-Identify the current PCI controller
-Identify the PSID and installed software
-Determine the PSID for switch model running Cumulus Linux
-Locate the firmware in the local repository
-Install the firmware and PSID
-Reboot the switch to apply new firmware
+* Identify the current PCI controller
+* Identify the PSID and installed software
+* Determine the PSID for switch model running Cumulus Linux
+* Locate the firmware in the local repository
+* Install the firmware and PSID
+* Reboot the switch to apply new firmware
 
 1.Begin by determining the PSID and firmware installed on the switch. Run the “lspci” command to see the active PCI controllers running on the switch.  You can filter to list only Mellanox controllers with “lspci | grep Mellanox”.
 
 Use the flint command to query the firmware. 
-# flint -d 01:00.0 q
+flint -d 01:00.0 q
 
 
 Refer to the PSID table in the section above to determine if the right PSID and firmware has been installed. You can check the switch type and model with “net show system” command.
