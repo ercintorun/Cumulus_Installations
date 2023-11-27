@@ -1,8 +1,8 @@
 # Linux_Installations
-* [01. Vscode, Ansible, Apache Installation](01_vscode_ansible_apache_installation.md)
-* [02. ISC DHCPD Installation](02_isc_dhcpd_installation.md)
-* [03. Configuring DHCPD For Cumulus](03_configuring_dhcpd.md)
-* [04. Creating HTTP File Server](04_creating_http_file_server.md)
+* [01. Vscode, Ansible, Apache Installation](Linux_Installations/01_vscode_ansible_apache_installation.md)
+* [02. ISC DHCPD Installation](Linux_Installations/02_isc_dhcpd_installation.md)
+* [03. Configuring DHCPD For Cumulus](Linux_Installations/03_configuring_dhcpd.md)
+* [04. Creating HTTP File Server](Linux_Installations/04_creating_http_file_server.md)
 
 
 #  Other Resources
