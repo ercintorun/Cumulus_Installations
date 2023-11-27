@@ -20,13 +20,14 @@ edit the /etc/pam_radius_auth.conf file, and add the relevant server, timeout an
 
  
 
-# server[:port]   shared_secret      timeout (secs)
+server[:port]   shared_secret      timeout (secs)
 
 10.250.0.3       <secret-key>       3
 
-# Since mgmt vrf is in use:
+Since mgmt vrf is in use:
 vrf-name mgmt
-#  to enable debugging
+
+to enable debugging
 debug
  
 
