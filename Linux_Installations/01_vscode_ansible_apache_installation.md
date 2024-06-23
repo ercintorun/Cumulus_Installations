@@ -100,3 +100,12 @@ Either change the group of the folder to "code-server"
 Or add "code-server" user to the group of the user that owns the folder
 
     sudo usermod -a -G ubuntu code-server
+
+Somehow if you endup with bad file permissions on your ssh folder etc, execute below: 
+
+    chmod go-w /home/ubuntu
+    chmod 700 /home/ubuntu/.ssh.  
+    chmod 600 /home/ubuntu/.ssh/config
+    chmod 600 /home/ubuntu/.ssh/id_rsa
+
+    
