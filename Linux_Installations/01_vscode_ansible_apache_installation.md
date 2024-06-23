@@ -93,10 +93,10 @@ https://www.bojankomazec.com/2022/07/introduction-to-ansible-navigator.html
 ## Folder Permission 
 
 The folder that the playbooks are in should be editable by "code-server" user. There are different options for it. 
-Either change the group of the folder to "code-server" or any other user 
+Either change the group of the folder to "code-server"
 
     chown -R code-server:codeserver <folder-name> 
 
-Or add "code-server" user to an otherusers group
+Or add "code-server" user to the group of the user that owns the folder
 
     sudo usermod -a -G ubuntu code-server
