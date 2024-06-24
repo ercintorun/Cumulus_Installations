@@ -2,13 +2,15 @@
 
     nv set service snmp-server listening-address localhost vrf mgmt
 
-# SSH with and after Cumulus 5.6 
-Cumulus 5.6 ve sonrasında da management vrf üzeriden yapmak için aşağıdaki komutun girilmesi gerekiyor: 
+# SSH Cumulus 5.6 and later
+The SSH service runs in the default VRF on the switch but listens on all interfaces in all VRFs. You can limit SSH to listen on specific VRFs.
 
     cumulus@switch:~$ nv set system ssh-server vrf mgmt
     cumulus@switch:~$ nv config apply
 
-# SSH before Cumulus 5.6 
+https://docs.nvidia.com/networking-ethernet-software/cumulus-linux-59/System-Configuration/Authentication-Authorization-and-Accounting/SSH-for-Remote-Access/
+
+# SSH Cumulus 5.5 and before 
 
 SSH and VRFs The SSH service runs in the default VRF on the switch but listens on all interfaces in all VRFs. To limit SSH to listen on just one VRF, you need to bind the SSH service to that VRF.
 
